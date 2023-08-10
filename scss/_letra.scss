@@ -1,0 +1,80 @@
+.teclado {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  gap: 10px;
+  padding-top: 15px;
+  margin-bottom: 10px;
+  // justify-content: center;
+}
+
+.barra {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+button.letra {
+  cursor: pointer;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px 20px;
+  width: 100%;
+  margin-bottom: 0px;
+
+  &:hover {
+    color: lightcoral;
+  }
+  &.blank {
+    background-color: white;
+    border: none;
+  }
+  img {
+    width: 80%;
+    min-width: 40px;
+  }
+}
+
+@media (max-width: 850px) {
+  button.letra {
+    font-weight: 700;
+    font-size: 3rem;
+    // border-radius: 15px;
+    // text-align: center;
+    // padding: 10px 20px;
+    // width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .teclado {
+    gap: 5px;
+    padding-top: 15px;
+  }
+
+  .barra {
+    gap: 5px;
+    padding-top: 15px;
+    padding-top: 0;
+  }
+
+  button.letra {
+    font-size: 3rem;
+    // border-radius: 15px;
+    // text-align: center;
+    padding: 5px 10px;
+    // width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  button.letra {
+    font-size: 2.5rem;
+    padding: 5px 10px;
+  }
+}

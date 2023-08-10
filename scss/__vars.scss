@@ -1,0 +1,26 @@
+$verdeCoda: #8cff00;
+$amarilloCoda: #ffe600;
+$naranjaCoda: #ff8c19;
+
+$bodyBackground: white;
+
+$fondoMenu: green;
+$debColor: #ccffcc;
+
+$colorHoy: #dc3545;
+$colorManana: #198754;
+
+$colorIconos: #34495e;
+
+$anchoMobil: 393px;
+$altoMobil: 463px;
+$bordeImagenes: 15px;
+
+$fondoActiva: $verdeCoda;
+
+@mixin ancho-mobil {
+  margin: auto;
+  margin-top: 10px;
+  width: 100%;
+  max-width: $anchoMobil;
+}
